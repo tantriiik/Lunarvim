@@ -250,18 +250,14 @@ M.config = function()
         i = { ":TSConfigInfo<cr>", "Info" },
       },
 
-       u = {
-         name = "Floaterm" ,
-         u = {"<cmd>FloatermNew lvim<cr>", "lvim"},
-         n = {"<cmd>FloatermNew --name=node node<cr>", "node"},
-         l = {"<cmd>FloatermNew lazygit<cr>", "node"},
-       },
 
-       U = {
-         name = "floatermsend" ,
+       u = {
+         name = "floaterm/send" ,
          an = {"<cmd>floatermsend<cr>", "send"},
          n = {"<cmd>FloatermNew --autoclose=0 node %<cr>", "node"},
-         g = {"<cmd>FloatermNew --autoclose=0 g++ % -o %< && ./%< <cr>", "gcc"}
+         g = {"<cmd>FloatermNew --autoclose=0 g++ % -o %< && ./%< <cr>", "gcc"},
+         v = {"<cmd>FloatermNew --autoclose=2 --width=0.5 --height=0.9999 --wintype=vsplit<cr>", "vsplit terminal"},
+         s = {"<cmd>FloatermNew --autoclose=2 --width=0.99999 --height=0.3 --wintype=split<cr>", "split terminal"},
        },
     },
   }

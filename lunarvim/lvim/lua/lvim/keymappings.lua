@@ -114,7 +114,7 @@ function M.get_defaults()
 
     ---@usage change or add keymappings for terminal mode
     -- term_mode = {
-    --   -- Terminal window navigation
+    --   -- Terminal window navigation this was disabled because of the floaterm window 
     --   ["<C-h>"] = "<C-\\><C-N><C-w>h",
     --   ["<C-j>"] = "<C-\\><C-N><C-w>j",
     --   ["<C-k>"] = "<C-\\><C-N><C-w>k",
