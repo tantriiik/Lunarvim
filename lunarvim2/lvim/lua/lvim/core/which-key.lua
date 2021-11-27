@@ -262,6 +262,7 @@ M.config = function()
         },
         d = { "<cmd>SDelete<cr>", "Delete the session" },
         c = { "<cmd>SClose<cr>", "Close the session" },
+        l = { "<cmd>SLoad<cr>", "Load a session" },
         },
       T = {
         name = "Treesitter",
