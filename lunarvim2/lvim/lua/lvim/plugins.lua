@@ -169,14 +169,14 @@ return {
   },
 
   -- Dashboard
-  {
-    "ChristianChiarulli/dashboard-nvim",
-    event = "BufWinEnter",
-    config = function()
-      require("lvim.core.dashboard").setup()
-    end,
-    disable = not lvim.builtin.dashboard.active,
-  },
+  -- {
+    -- "ChristianChiarulli/dashboard-nvim",
+    -- event = "BufWinEnter",
+    -- config = function()
+      -- require("lvim.core.dashboard").setup()
+    -- end,
+    -- disable = not lvim.builtin.dashboard.active,
+  -- },
 
   -- Terminal
   {
@@ -187,4 +187,6 @@ return {
     end,
     disable = not lvim.builtin.terminal.active,
   },
+  --vim startify for starting up
+  {"mhinz/vim-startify"}
 }
