@@ -228,7 +228,7 @@ M.config = function()
         r = { "<cmd>LvimReload<cr>", "Reload LunarVim's configuration" },
         u = { "<cmd>LvimUpdate<cr>", "Update LunarVim" },
       },
-      s = {
+      S = {
         name = "Search",
         b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
         c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
@@ -245,6 +245,24 @@ M.config = function()
           "Colorscheme with Preview",
         },
       },
+
+      s = {
+        name = "Startify",
+        s = { "<cmd>SSave!<cr>", "save session" },
+        r={
+          name="reactSessions",
+          a = { "<cmd>SLoad! react1<cr>", "react1" },
+          l = { "<cmd>SLoad! react2<cr>", "react2" },
+        },
+
+        C={
+          name="cpp sessions",
+          a = { "<cmd>SLoad! cpp(test)<cr>", "cpp(test)" },
+          l = { "<cmd>SLoad! cpp(problems)<cr>", "cpp(problems)" },
+        },
+        d = { "<cmd>SDelete<cr>", "Delete the session" },
+        c = { "<cmd>SClose<cr>", "Close the session" },
+        },
       T = {
         name = "Treesitter",
         i = { ":TSConfigInfo<cr>", "Info" },
@@ -259,6 +277,8 @@ M.config = function()
          v = {"<cmd>FloatermNew --autoclose=2 --width=0.5 --height=0.9999 --wintype=vsplit<cr>", "vsplit terminal"},
          s = {"<cmd>FloatermNew --autoclose=2 --width=0.99999 --height=0.3 --wintype=split<cr>", "split terminal"},
        },
+       x={"<cmd>SClose<cr>", "CloseSession" },
+       j = { "<cmd>BufferPick<cr>", "Jump" },
     },
   }
 end
