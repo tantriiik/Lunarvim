@@ -188,6 +188,5 @@ return {
     disable = not lvim.builtin.terminal.active,
   },
   --vim startify for starting up
-  {"mhinz/vim-startify"},
-
+  {"mhinz/vim-startify"}
 }
